@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+<body> 
+    <fieldset style="background-color: rgb(160, 38, 16);">
+        <legend style="background-color: rgb(136, 136, 238);">Personal Data</legend>
+        <br>
+        <fieldset style="background-color: rgb(209, 142, 18);">
+            <!-- padding : top right bottom left -->
+            <legend style="background-color:rgb(136, 136, 238); padding:40px 0px 40px 0px">YourName</legend>
+            <br>
+            <br>
+            <form>
+                
+                <table>
+                    <tr>
+                        <td><label for="firstName">First Name :</label></td>
+                        <td><input type="text" name="fname" id="firstName" placeholder="ex:ahmed" required maxlength="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="secondName">Second Name :</label></td>
+                        <td><input type="text" name="sname" id="secondName" placeholder="ex:bahnasy" required maxlength="10"></td>
+                    </tr>
+                </table>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <br>
+            <table>
+                <tr>
+                    <td><label for="phone">your phone :</label></td>
+                    <td><input type="tel" name="phone" id="phone" required maxlength="11"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email :</label></td>
+                    <td><input type="email" name="mail" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">password :</label></td>
+                    <td><input type="password" name="pass" id="password" required minlength="8" maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td><label for="repass">re-password :</label></td>
+                    <td><input type="password" name="repass" id="repass"minlength="8" maxlength="20"></td>
+                </tr>
+            </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <table>
+                <!-- Radio: user select only one choice (have same name to inform backend that these choices are under same title so user can not choose both of them) -->
+                
+                    <tr>
+                        <td><input type="radio" name="gender" id="male"></td>
+                        <td><label for="male">Male</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="gender" id="female"></td>
+                        <td><label for="female">Female</label></td>
+                    </tr>
+            </table>
+    
+        <br>
+        <br>
+        <br>
+      
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="stu." id="st"></td>
+                    <td><label for="st">Student</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="grad." id="grad."></td>
+                    <td><label for="grad.">Graduated</label></td>
+                </tr>
+            </table>
+        <br>
+        <br>
+        <select name="uni" id="uni">
+            <optgroup label="Group1">
+                <option value="AUC">AUC</option>
+            </optgroup>
+            <optgroup label="Group2">
+                <option value="ASU">ASU</option>
+                <option value="BUC">BUC</option>
+            </optgroup>
+            <optgroup label="Group3" disabled>
+                <option value="BNU">BNU</option>
+                <option value="BUE">BUE</option>
+                <option value="MUST">MUST</option>
+            </optgroup>
+        </select>
+        <br>
+        <button type="submit" style="background-image: url(assests/button.png); background-size:contain; width: 70px; color:white">Submit</button>
+    </fieldset>
+            </form>
+</body>
+</html>
